@@ -22,7 +22,7 @@ const nth_most_rarest_item = (list,n) => {
     // Count the number of times each item appears in the list
     for (let item of list) {
         newList[item] = newList[item] ? newList[item] + 1 : 1;
-    }//{ '1': 1, '2': 2, '3': 3, '4': 8, '5': 5 }
+    }//{ '1': 1, '2': 2, '3': 3, '4': 4, '5': 5 }
     
     // Change the values into an array format and sort using the number of occurence 
     const sort=Object.entries(newList).sort((a, b) => a[1] - b[1]);
